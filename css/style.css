@@ -1,0 +1,7 @@
+body {
+	background-color: #000000;
+}
+.banner-home {
+	background: url(../assets/images/banner-initial.png) center top/cover o-repeat
+		fixed;
+}
