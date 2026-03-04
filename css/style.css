@@ -1,13 +1,21 @@
 body {
 	background-color: black;
 }
-body > header {
-	background-image: url(../assets/images/banner-initial.png);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+
+.banner-index {
+	background: url(../assets/images/banner-initial.png) center top/cover
+		no-repeat fixed;
 }
+.banner-home {
+	background: url(../assets/images/growcast-01.png) center top/cover no-repeat;
+	min-height: 820px;
+}
+/* Texto do header */
+.row-home-growcast {
+	align-items: flex-end;
+	min-height: 680px;
+}
+/* Botão "vamos lá" da página index */
 .btn-netflix {
 	background-color: red;
 	color: white;
@@ -20,6 +28,7 @@ body > header {
 	color: white;
 }
 
+/* Accordions da página index */
 .accordion-item {
 	border: 5px solid #000000;
 }
@@ -37,6 +46,69 @@ body > header {
 
 .accordion-button::after {
 	background-image: url("../assets/images/add.svg") !important;
+}
+
+/* footer */
+
+footer {
+	color: #757575;
+}
+
+.link-growdev {
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.link-growdev:hover {
+	color: #ff8534;
+}
+
+.detail-movie {
+	color: white;
+	margin-left: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+.detail-movie svg {
+	margin: 10px;
+}
+
+.item-hover {
+	transition: all 0.5s ease-out;
+}
+
+.item-hover:hover {
+	margin-top: -20px;
+	position: absolute;
+	width: 350px;
+	background-color: #000000;
+	padding-bottom: 20px;
+}
+
+.item-hover:hover .detail-movie {
+	display: block;
+}
+
+.detail-hover {
+	margin-top: 20px;
+	position: absolute;
+	width: 350px;
+	background-color: #000000;
+	padding-bottom: 20px;
+}
+
+.modal-content-movie {
+	background-color: transparent;
+}
+
+.modal-header-movie {
+	border-bottom: none;
+}
+
+.col-movie {
+	min-height: 230px;
 }
 
 /* Para as listas não quebrarem linha e permitirem scroll horizontal */
